@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction</title>
+</head>
+<body style="display: flex;">
+    <header>
+        <div class="icon-nav"></div>
+        <ul class="header-list">
+            <li><a href="./index.html">Accueil</a></li>
+            <li style="background-color: #1F1F1F;"><a href="./introduction.html">Introduction</a></li>
+            <li><a href="./biographie.html">Biographie</a></li>
+            <li class="list">
+                <a href="./oeuvres.html">Œuvres</a>
+                <ul class="mini-list">
+                    <li>
+                        <a href="./oeuvres.html#ch1">&#9658; Chaptire 1</a>
+                    </li>
+                    <li><a href="./oeuvres.html#ch2">&#9658; Chapitre 2</a></li>
+                </ul>
+            </li>
+            <li><a href="./source.html">Sources</a></li>
+        </ul>
+    </header>
+    <main class="introduction">
+        <section>
+            <div>
+                <header>
+                    <h1>Alan Turing</h1>
+                </header>
+                <div class="introduction_content">
+                    <p>
+                        Inventeur de l'ordinateur et pionnier de l'intelligence artificielle,
+                        le mathématicien Alan Turing fut aussi un héros de la Seconde Guerre mondiale, persécuté et humilié dans les années 1950.
+                    </p>
+                    <p>
+                        Alan Turing, l'un des plus grands esprits du XXe siècle dans le domaine des mathématiques et de l'informatique.
+                    </p>
+                    <p>
+                        À travers ce site, nous explorons la vie,
+                         les travaux et l'héritage de Turing, en mettant en lumière son impact révolutionnaire sur la science et la technologie.
+                    </p>
+                </div>
+            </div>
+            <aside>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">ALAN MATHISON TURING</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img src="./imgs/alan_introduction.jpg" alt=""></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Naissance</th>
+                            <td>23 juin 1912 Maida Vale (Londres, Royaume-Uni) </td>
+                        </tr>
+                        <tr>
+                            <th>Décès</th>
+                            <td>07 juin 1954 (à 41 ans) Wilmslow (cheshire, Royaume-Uni)</td>
+                        </tr>
+                        <tr>
+                            <th>Nationalité</th>
+                            <td>Britannique</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Domaines</th>
+                            <td>
+                                <ul>
+                                    <li>mathématiques</li>
+                                    <li>Informatique</li>
+                                    <li>cryptanalyse</li>
+                                    <li>logique</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </aside>
+        </section>
+    </main>
+</body>
+<script>
+    document.querySelector(".icon-nav").addEventListener("click",()=>{
+    document.querySelector(".header-list").classList.toggle("clicked")
+})
+</script>
+</html>

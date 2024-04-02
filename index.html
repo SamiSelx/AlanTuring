@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alan Turing</title>
+</head>
+<body style="display: flex;">
+    <header>
+        <div class="icon-nav"></div>
+        <ul class="header-list">
+            <li style="background-color: #1F1F1F;"><a href="./index.html">Accueil</a></li>
+            <li><a href="./introduction.html">Introduction</a></li>
+            <li><a href="./biographie.html">Biographie</a></li>
+            <li class="list">
+                <a href="./oeuvres.html">Œuvres</a>
+                <ul class="mini-list">
+                    <li>
+                        <a href="./oeuvres.html#ch1">&#9658; Chaptire 1</a>
+                    </li>
+                    <li><a href="./oeuvres.html#ch2">&#9658; Chapitre 2</a></li>
+                </ul>
+            </li>
+            <li><a href="./source.html">Sources</a></li>
+        </ul>
+    </header>
+
+    <main class="main-accueil">
+        <img class="accueil-img" src="./imgs/alan_background.jpg" alt="">
+        <section class="accueil">
+            <div>
+                <p>Alan Turing the father of modern computer science and artificial intelligence</p>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+<script>
+    document.querySelector(".icon-nav").addEventListener("click",()=>{
+    document.querySelector(".header-list").classList.toggle("clicked")
+})
+</script>
+</html>
