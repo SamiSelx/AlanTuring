@@ -41,25 +41,40 @@
         <header>
             <h1>Le Décrypteur de l’Enigma</h1>
         </header>
-        <p>Alan est repéré par les services secrets de sa Gracieuse Majesté pour ses talents de cryptographe. Dès le
-            début de la Seconde Guerre mondiale, l’armée britannique le sollicite pour déchiffrer la célèbre
-            Enigma.<br><br></p>
-
-        <h4>Enigma:</h4>
-        <p>est une machine de chiffrement mécanique utilisée par les forces armées allemandes pour sécuriser leurs
+         <br> 
+           <p>Alan est repéré par les services secrets de sa Gracieuse Majesté pour ses talents de cryptographe. Dès le début de la Seconde Guerre mondiale, l’armée britannique le sollicite pour déchiffrer la célèbre Enigma.<br><br></p>
+        <p>
+            <span style="font-size: 1.5em ; font-weight: bold;"> Enigma:</span>
+           
+            est une machine de chiffrement mécanique utilisée par les forces armées allemandes pour sécuriser leurs
             communications.<br>
             Son fonctionnement repose sur une série de rotors, de câblages et de réflecteurs, qui transforment chaque
             lettre du message en une autre lettre.<br><br>
-        </p>
+         </p>
 
-        <p>
-            À Bletchley Park, situé à 80 kilomètres de la capitale britannique, les services secrets rassemblent une
-            équipe hétéroclite de spécialistes. Parmi eux, Alan Turing, mathématicien de génie, se distingue.<br>
-            En août 1940, il met au point sa fameuse « bombe », un supercalculateur bruyant capable de décrypter un
-            message Enigma en moins d’une heure.<br>
-            Ce système subira ensuite plusieurs améliorations, contribuant ainsi de manière cruciale à la victoire des
-            Alliés pendant la guerre.<br><br>
-        </p>
+
+            <h2><u>Cryptanalyse d'Enigma:</u></h2>
+        
+        <p>À partir de septembre 1938, Turing travaille à temps partiel pour la Government Code and Cypher School (GC&CS). Avec le concours d'un expert en cassage de codes, Dilly Knox, il se concentre sur la cryptanalyse d'Enigma. Peu après une rencontre à Varsovie (juillet 1939) où le Bureau polonais du chiffre explique aux Français et aux Britanniques le câblage détaillé des rotors d'Enigma et la méthode polonaise de décryptage des messages associés, Turing et Knox se mettent au travail sur une approche moins spécifique du problème. En effet, la méthode polonaise était fondée sur le décryptage de la clef répétée au début du message, mais cette répétition était susceptible d'être supprimée, car trop vulnérable, ce qui arriva en mai 1940. Tenus à l'écart de Bletchley Park, les cryptanalystes polonais réfugiés en Grande-Bretagne seront affectés au décryptage de codes mineurs, tandis que les services secrets français continueront à transmettre clandestinement des informations aux Alliés.<br><br></p>
+        <p>Plus générale, l'approche de Turing transforme la cryptanalyse, de technique élaborée qu'elle était depuis longtemps, en une branche des mathématiques. Il ne s'agit plus de deviner un réglage choisi parmi 159 milliards de milliards de réglages disponibles, mais de mettre en œuvre une logique fondée sur la connaissance du fonctionnement interne de la machine Enigma et d'exploiter les imprudences des chiffreurs allemands, afin de déduire le réglage de toutes les machines Enigma d'un réseau particulier pour la journée : disposition initiale des rotors (parmi 60 dispositions initiales disponibles pour 3 rotors parmi 5, ou 336 dispositions pour 5 rotors parmi 8), réglage initial des rotors (parmi 17 576 réglages initiaux disponibles), permutations des fiches du tableau de connexions (parmi 150 738 milliards d'enfichages disponibles), etc. C'est alors que Turing rédige la première spécification fonctionnelle d'une nouvelle « bombe », machine électromécanique capable d'abattre quotidiennement le travail de dix mille personnes.<br><br></p>
+        <p>La spécification de cette « bombe » est le premier des cinq progrès majeurs dus à Turing pendant la durée de la guerre. Les autres sont la procédure d'identification par déduction de la clef quotidienne des différents réseaux de la Kriegsmarine, le développement d'une procédure statistique d'amélioration de l'efficacité des bombes (Banburismus (en)), le développement d'une procédure (« Turingerie ») de déduction des réglages des roues de la machine Lorenz SZ 40/42 et enfin, vers la fin de la guerre, le développement d'un brouilleur de radiophonie.<br><br></p>
+       <p>Turing et Knox mènent leurs travaux à Bletchley Park, principal site du décryptage du Royaume-Uni, le Government Code and Cypher School (GC&CS). Durant le printemps 1941, Alan se rapproche de Joan Clarke, une des rares femmes cryptologues à Bletchley Park. Malgré un amour platonique qui ne dépasse jamais l'amitié, il se fiance avec elle par devoir social, car les parents de Clarke lui demandent de se marier. Turing rompt les fiançailles durant l'été après lui avoir révélé son homosexualité. Malgré cela, leurs relations restent excellentes28.<br><br></p>
+       <p>En utilisant certaines techniques statistiques en vue d'optimiser l'essai des différentes possibilités du processus de décryptage, Turing apporte une contribution novatrice. Deux documents qu'il rédige alors (un Rapport sur les applications de la probabilité à la cryptographie et un Document sur la statistique des répétitions) ne seront déclassés et remis aux National Archives du Royaume-Uni qu'en avril 2012.<br><br></p>
+        <h2><u>La bombe de Turing, Welchman et Pendered:</u></h2>
+        <p>Quelques semaines à peine après son arrivée à Bletchley Park, Turing rédige les spécifications d'une machine électromécanique plus efficace que la bomba polonaise. La capacité de la bombe de Turing est doublée, grâce à un autre mathématicien de Cambridge, Gordon Welchman. Encore améliorée par un espoir de Cambridge, Richard Pendered, la bombe, une fois fabriquée par les ingénieurs de la British Tabulating Company, est alors l'outil fondamental le plus automatisé capable de décrypter les messages chiffrés par Enigma.<br><br></p>
+        <p>Au moyen d'un fragment probable de texte en clair, la bombe recherche les réglages corrects possibles utilisés pour 24 heures par chaque réseau allemand (ordre des rotors, réglages des rotors et enfichage du tableau de connexions). Pour chaque réglage possible des rotors, la bombe effectue électriquement une chaîne de déductions logiques fondées sur les mots probables. À chaque occurrence d'une contradiction, la bombe écarte ce réglage et passe au suivant. La plupart des réglages essayés provoquent des contradictions, ils sont alors rejetés et ceux qui restent, peu nombreux, sont alors examinés de près.<br><br></p>
+        <p>Pendant presque toute la durée de la guerre, ce procédé permet de déchiffrer une grande partie des messages Enigma de la Luftwaffe dont les chiffreurs multiplient les négligences. Comme l'aviation coopère étroitement avec les deux autres armées (mer et terre), la GC&CS obtient par ce biais des renseignements sur l'ensemble des activités de la Wehrmacht. Cependant, l'interprétation des messages une fois déchiffrés pose souvent de tels problèmes à l'état-major qu'ils ne peuvent être qu'en partie exploités. Ce sera le cas du plan d'invasion de la Crète29.<br><br></p>
+        
+
+    <h2><u>La Hut 8 et l'Enigma navale:</u></h2>
+    <p>Affecté à la hutte 8 (bâtiment préfabriqué no 8), Turing décide de traiter un problème autrement difficile, la cryptanalyse d'Enigma navale, « parce que personne d'autre ne s'en occupait et que je pouvais l'avoir pour moi tout seul ». La nuit suivant son affectation, il conçoit le Banburismus (en), technique statistique appelée plus tard analyse séquentielle par Abraham Wald, dans l'espoir de percer l'Enigma navale : « Pourtant je n'étais pas sûr que cela marcherait en pratique ». Dans cette idée, il invente une mesure de poids de la preuve qu'il baptise le « Ban ». Les Banburismes peuvent écarter certaines séquences des rotors Enigma, c'est un gain de temps important. Cependant, les chiffreurs de la Kriegsmarine, en particulier les sous-mariniers, appliquent sans failles toutes les consignes de sécurité. Les messages de l'Enigma navale ne sont décryptés que pendant les périodes couvertes par les manuels ou grâce aux feuilles de bigrammes capturées par les Alliés.<br><br></p>
+    <p>En novembre 1942, Turing se rend aux États-Unis où, avec des cryptanalystes de l'US Navy, il travaille sur l'Enigma navale et à la conception de « bombes électromécaniques ». À Dayton (Ohio), il visite l'United States Naval Computing Machine Laboratory. Les « bombes » à l'américaine n'éveillent pas son enthousiasme. Pourtant, c'est l'extraordinaire puissance de la combinaison des centaines de « bombes » construites grâce aux moyens de l'industrie américaine qui, finalement, permet de percer à nouveau les secrets d'Enigma, spécialement ceux de la Kriegsmarine et des U-Boot. À partir de la fin 1943, les sous-marins allemands auront été pour l'essentiel soit détruits, soit chassés de l'Atlantique Nord par la puissance des marines de guerre alliées, combinant les renseignements d'origine Ultra, les reconnaissances aéronavales, la détection par radar, par écho-sondeur ASDIC, la localisation par radiogoniométrie et, bien entendu, grâce au nombre des navires engagés et à l'endurance des marins.<br><br></p>
+    <p>En mars 1943, Turing revient à Bletchley Park. En son absence, son adjoint Hugh Alexander avait officiellement pris la fonction de directeur de la Hut 8, qu'il avait de fait toujours exercée, Turing n'ayant pas d'intérêt pour la direction. Turing devient consultant en cryptanalyse au profit de l'ensemble de la GC&CS. À propos du rôle de Turing, Alexander dit :<br><br></p>
+    <p>« Il n'est pas permis de douter que les travaux de Turing fussent le facteur le plus important du succès de la Hut 8. Au départ, il fut le seul cryptographe à penser que le problème valait d'être abordé, et non seulement lui revient le mérite de l'essentiel du travail théorique de la Hut 8, mais encore il partage avec Gordon Welchman et Harold Keen le mérite de l'invention de la bombe électromécanique. Il est toujours difficile de dire que tel ou tel est absolument indispensable, mais si quelqu'un fut indispensable à la Hut 8, ce fut Turing. Le travail de pionnier tend toujours à être oublié quand par la suite tout paraît plus facile, sous l'effet de l'expérience et de la routine. »
+
+        <br><br></p>
+
+
     </section>
 
 
