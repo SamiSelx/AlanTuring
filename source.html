@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!--Pour vu dans Mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Relie le fichier CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Alan Turing</title>
 </head>
 <body style="display: flex;">
+    <!----------Navigation---------->
     <header>
         <div class="icon-nav"></div>
         <ul class="header-list">
@@ -25,48 +28,66 @@
             <li style="background-color: #1F1F1F;" > <a href="./source.html">Sources</a></li>
         </ul>
     </header>
+    <!----------Navigation---------->
+
+    <!----------Main Sources---------->
     <main class="Sources">
         <section>
-   
+            <!--Titre Sources-->
             <header>
-                <!-- <h1>sources</h1> -->
                 <h1> Réference </h1>
             </header>
-            
+            <!--Titre Sources-->
+    
+            <!--Réferences Lien-->
             <ul>
-                <li><p> Article de  <a target="_blank" href="https://fr.wikipedia.org/wiki/Alan_Turing#">wikipedia</a>  Realisé le 25/03/2019 </p></li>
-                <li><p> Artticle de <a target="_blank" href="https://lejournal.cnrs.fr/articles/alan-turing-genie-au-destin-brise">le journal</a>  Réalisé le 12/12/2020</p></li>
-                <li><p> Artticle de <a target ="_blank" href="https://www.bibmath.net/bios/index.php?action=affiche&quoi=turing"> bibmath </a>  Réalisé le 07/09/2022</p></li>
+                <li>
+                    <p> Article de <a target="_blank" href="https://fr.wikipedia.org/wiki/Alan_Turing#">wikipedia</a>
+                        Realisé le 25/03/2019 </p>
+                </li>
+                <li>
+                    <p> Artticle de <a target="_blank"
+                            href="https://lejournal.cnrs.fr/articles/alan-turing-genie-au-destin-brise">le journal</a>
+                        Réalisé le 12/12/2020</p>
+                </li>
+                <li>
+                    <p> Artticle de <a target="_blank"
+                            href="https://www.bibmath.net/bios/index.php?action=affiche&quoi=turing"> bibmath </a> Réalisé
+                        le 07/09/2022</p>
+                </li>
             </ul>
-                
-        
-            <h3>les noms des etudiants </h3>
-            <ol>
-                <table border ="1">
-                    <tr>
-                        <th> SAMI SELLAL   </th>
-                        <th> chaa Nada    </th>
-                        <th>kedjour yacine</th>
-                    </tr>
-                    <tr>
-                        <td> 222231516202 </td>
-                        <td> 222231485102 </td>
-                        <td> 222231521218 </td>
-                    </tr>
-                    <tr>
-                        <td> Groupe 01 </td>
-                        <td> Groupe 03 </td>
-                        <td> Groupe 02 </td>
-                    </tr>
-                </table>
-             
-            </ol>
-            
+            <!--Réferences Lien-->
+    
+    
+            <!--List Des Etudiants sous forme table-->
+            <h3 style="margin-bottom:30px; font-size: 1.8em;">les noms des etudiants </h3>
+    
+            <table border="1">
+                <tr>
+                    <th> SAMI SELLAL </th>
+                    <th> chaa Nada </th>
+                    <th>kedjour yacine</th>
+                </tr>
+                <tr>
+                    <td> 222231516202 </td>
+                    <td> 222231485102 </td>
+                    <td> 222231521218 </td>
+                </tr>
+                <tr>
+                    <td> Groupe 01 </td>
+                    <td> Groupe 03 </td>
+                    <td> Groupe 02 </td>
+                </tr>
+            </table>
+            <!--List Des Etudiants sous forme table-->
+    
+    
         </section>
     </main>
-    
+    <!----------Main Sources---------->
 </body>
 <script>
+    //Script permet d'ajouter class clicked au icon de navigation
     document.querySelector(".icon-nav").addEventListener("click", () => {
         document.querySelector(".header-list").classList.toggle("clicked")
     })

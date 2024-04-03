@@ -1,13 +1,16 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!--Pour vu dans Mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Relie le fichier CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Introduction</title>
 </head>
 <body style="display: flex;">
+    <!----------Navigation---------->
     <header>
         <div class="icon-nav"></div>
         <ul class="header-list">
@@ -26,8 +29,12 @@
             <li><a href="./source.html">Sources</a></li>
         </ul>
     </header>
+    <!----------Navigation---------->
+
     <main class="introduction">
         <section>
+            <!--Introduction content-->
+            <!--On Utilise DIV pour facilité l'animation-->
             <div>
                 <header>
                     <h1>Alan Turing</h1>
@@ -46,6 +53,7 @@
                     </p>
                 </div>
             </div>
+            <!--Aside: plus information dans un table-->
             <aside>
                 <table>
                     <thead>
@@ -82,15 +90,20 @@
                                 </ul>
                             </td>
                         </tr>
+                        
+                        
                     </tfoot>
                 </table>
             </aside>
+            <!--Introduction content-->
         </section>
     </main>
 </body>
 <script>
-    document.querySelector(".icon-nav").addEventListener("click",()=>{
-    document.querySelector(".header-list").classList.toggle("clicked")
-})
+    //Script permet d'ajouter class clicked au icon de navigation
+    document.querySelector(".icon-nav").addEventListener("click", () => {
+        document.querySelector(".header-list").classList.toggle("clicked")
+    })
 </script>
+
 </html>

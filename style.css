@@ -58,6 +58,7 @@ body > header{
 }
 
 
+/*Ajoute transition pour hover*/
 body > header ul > li:hover > a{
     background-color: #1F1F1F;
     padding-left: 25px;
@@ -68,6 +69,8 @@ body > header .header-list{
     list-style: none;
     transition: 0.4s;
 }
+
+/*si header-list contient classe clicked fait cette modification (se fait par JS)*/
 .header-list.clicked{
     z-index: 999;
     opacity: 1;
@@ -87,7 +90,7 @@ body > header .header-list li a{
     overflow: hidden;
     transition: height 0.7s;
 }
-
+/*quand on hover change le hauteur*/
 .header-list .list:hover .mini-list{
     height: 140px;
 }
@@ -96,12 +99,14 @@ body > header .header-list li a{
     padding-left: 45px !important;
 }
 
+/*Change hauteur de mini-list pour ecran largeur entre 992px et 1200px*/
 @media (min-width:992px) and (max-width:1200px){
     .header-list .list:hover .mini-list{
         height: 200px;
     }
 }
 
+/*Ajout Icon*/
 header .icon-nav{
     height: 25px;
     width: 25px;
@@ -142,7 +147,6 @@ header .icon-nav::after{
     }
     body > header .header-list{
         position: absolute;
-        z-index: 888;
         top: 65px;
         left: 0;
         width: 100%;
@@ -170,10 +174,13 @@ main{
     overflow: hidden;
 }
 
+
 main.main-accueil{
     background-color: black;
 
 }
+
+/*on ajoute before pour fait background avec coupe en utilisant clip-path*/
 main.main-accueil::before{
     content: '';
     position: absolute;
@@ -187,7 +194,7 @@ main.main-accueil::before{
     z-index: 1;
 }
 
-
+/*Accueil image*/
 main.main-accueil img{
     position: absolute;
     right: 0;
@@ -320,9 +327,7 @@ main.main-accueil img{
 
 
 /*======Table Tbody======*/
-.introduction section table tfoot {
 
-}
 .introduction section table tfoot td ul{
     list-style: none;
 }
@@ -411,6 +416,8 @@ main .accueil img{
     position: relative;
     height: 400px;
 }
+
+/*Ajoute background avec moins d'opacité*/
 .biographie .biographie-img::before{
     content: '';
     position: absolute;
@@ -449,6 +456,7 @@ main .accueil img{
     opacity: 0.2;
 }
 
+/*ajoute !important pour override valeur précédemment*/
 .etude_img{
     right: 0 !important; 
 }
@@ -459,10 +467,10 @@ main .accueil img{
 }
 
 
-.biographie section p{
+main section p{
     font-size: 1.1em;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /*Ajouter Media pour mobile*/
@@ -504,6 +512,13 @@ main .accueil img{
     padding: 5%;
 }
 
+.main-oeuvres section h2{
+    margin-top: 15px;
+}
+
+.main-oeuvres section .enigma-introduction{
+    font-style: italic;
+}
 
 /* la photo de enigma chapitre1 */
 
@@ -516,6 +531,7 @@ main .accueil img{
     height:100% ;
     width: 100%;
 }
+
 
 .main-oeuvres figure:first-of-type img{
     filter: brightness(0.8);
@@ -539,24 +555,6 @@ main .accueil img{
     left: 5%;
     font-size: 2.5em;
 }
-
-/* p,h4,h1,h2 {
-    animation-name: slide-in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes slide-in {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
 
 /*============================================ Oeuvres ============================================*/
 
@@ -635,53 +633,9 @@ main .accueil img{
 
 /*============================================ Sources ============================================*/
 
-/*Arrow up*/
-main .btn-up{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    background-color: #ccc;
-    border-radius: 50%;
-}
-main .btn-up .arrow-up{
-    position: absolute;
-    top: 50%;
-    left: 50%;  
-    transform: translate(-50%,-50%);
-}
-
-main .btn-up .arrow-up:nth-of-type(2){
-    top: calc(50% + 8px);
-}
-main .arrow-up::before{
-    content: '';
-    position: absolute;
-    top: calc(50% - 12px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-style: solid;
-    border-width: 15px;
-    border-color: transparent transparent #484848 transparent;
-}
-
-main .arrow-up::after{
-    content: '';
-    position: absolute;
-    top: calc(50% - 8px);
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-style: solid;
-    border-width: 15px;
-    border-color: transparent transparent #ccc transparent;
-}
-
-
 /*============================================ MAIN ============================================*/
 
 
 
 /*Ajoute font pour les premiers letters*/
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
